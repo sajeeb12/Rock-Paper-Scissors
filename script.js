@@ -100,6 +100,8 @@ function playRound(humanSelection,computerSelection){
  function resetGame(){
     humanScore.textContent = 0;
     computerScore.textContent = 0;
+    humanPoints = 0;
+    computerPoints = 0;
     won.textContent = '';
     document.getElementById('comp-choice').textContent = '';
     btnGroup.style.display = 'block'
