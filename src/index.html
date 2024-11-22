@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="src/input.css">
+    <link href="./output.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="my-20 mx-auto px-10 py-6 rounded-[25px] max-w-3xl bg-[#D9D9D9] relative">
+
+        <div class="mb-[19px] flex items-center justify-between">
+            <h1 class="text-3xl font-bold text-[#070A52] ">
+                Rock Paper Scissors With Sajeeb
+            </h1>
+            <p id="wons" class="text-xs font-bold text-[#E42D27]"></p>
+        </div>
+        <div class ="absolute right-10 top-16 text-xs">
+            <p id="comp-choice" class="font-bold text-[#174a20]"></p>
+        </div>
+
+        <div class="text-black  font-bold">
+            <h2 class="text-center text-[20px] cursor-pointer hover:text-blue-600"
+             onclick = "resetGame()">Reset the tour</h2>
+        </div>
+
+        <div class="my-[35px] mx-[81px] flex justify-between text-sm font-semibold">
+            <p>PLAYER SCORE: <span id="human-score">0</span></p>
+            <p>COMPUTER SCORE: <span id="comp-score">0</span> </p>
+        </div>
+
+        <div class="text-[#AF2D2D] text-center">
+            <p id="human" class="font-bold text-[40px] hidden">YOU WON ! 🎉</p>
+            <p id="comp" class="font-bold text-[40px] hidden">COMPUTER WON ! 🎉</p>
+        </div>
+        <div class="flex gap-14 items-center justify-center mb-[45px]">
+            <img src="images/Paper.svg" alt="paper">
+            <p class="text-[20px] font-bold">VS</p>
+            <img src="images/Rock.svg" alt="rock">
+        </div>
+        <div id="btn-group">
+            <div class="text-center text-sm text-[#353535] font-medium mb-[18px]">
+                <p>Choose your move, rock, paper, or scissors?</p>
+            </div>
+            <div class="mx-auto flex justify-center gap-12">
+
+                <button id="rock" class="text-[25px] font-bold text-white px-12 py-4
+                         bg-[#DF2E38] rounded-[14px] cursor-pointer" value="Rock">ROCK</button>
+            
+                <button id="paper" class="text-[25px] font-bold text-white px-11 py-4
+                            bg-[#DF2E38] rounded-[14px] cursor-pointer" 
+                            value="Paper">PAPER</button>
+            
+                <button id="scissors" class="text-[25px] font-bold text-white px-5 py-4
+                        bg-[#DF2E38] rounded-[14px] cursor-pointer" 
+                        value="Scissors">SCISSORS</button>
+            </div>
+        </div>
+        
+    </div>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
